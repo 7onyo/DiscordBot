@@ -1,9 +1,9 @@
 #!/bin/bash
 
-cd /home/discordbot/DiscordBot || exit
+cd /home/botuser/DiscordBot || exit
 
 git pull origin main
 
-/home/onion/DiscordBot/venv/bin/pip install -r requirements.txt
+/home/botuser/DiscordBot/venv/bin/pip install -r requirements.txt
 
 sudo systemctl restart discordbot

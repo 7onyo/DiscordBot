@@ -31,9 +31,6 @@ runcmd:
   - ufw allow OpenSSH
   - ufw --force enable
 
-  - mkdir -p /home/botuser/discord-bot
-  - chown -R botuser:botuser /home/botuser/discord-bot
-
 power_state:
   mode: reboot
   message: "Init complete. Rebooting."
