@@ -1,0 +1,17 @@
+[Unit]
+Description=My Discord Bot
+After=network.target
+
+[Service]
+
+User=botuser
+
+WorkingDirectory=/home/botuser/DiscordBot/
+
+ExecStart=/home/botuser/DiscordBot/venv/bin/python /home/botuser/DiscordBot/bot.py
+
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
