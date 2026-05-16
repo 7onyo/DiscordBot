@@ -1,6 +1,11 @@
-import discord
 import os
+import discord
 from discord.ext import commands
+from dotenv import load_dotenv
+
+load_dotenv()
+TOKEN = os.getenv('DISCORD_API_TOKEN')
+
 
 intents = discord.Intents.default()
 intents.message_content = True
@@ -16,4 +21,4 @@ async def on_ready():
 async def hello(ctx):
     await ctx.send('Hello World')
 
-bot.run(os.getenv('DISCORD_API_TOKEN'))
+bot.run(TOKEN)
