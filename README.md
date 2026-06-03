@@ -5,6 +5,13 @@ This is a simple Discord bot I built with `discord.py`. It tracks user interacti
 ## Status
 I am actively developing this bot and adding more features regularly.
 
+## Invitation Link
+You can invite the bot to your server using this link: [Invite Bot](https://discord.com/oauth2/authorize?client_id=1503344437135413348&permissions=274877983744&integration_type=0&scope=bot)
+
+*Note: The bot is currently deployed on a VPS for showcase purposes. I cannot guarantee 100% uptime.*
+
+
+
 ## Development Workflow
 To maintain stability, I use a two-bot system:
 - **Production Bot:** Connected to my `main` branch. It runs on my Hetzner VPS and uses my production API token.
